@@ -4,11 +4,11 @@ public class SelectSort {
     public static void main(String[] args) {
 
         int list[] = {16,25,85,94,14,5,38};
-        selectSort(list);
+        selectSort1(list);
         pList(list);
     }
 
-    static void selectSort(int[] arr){
+    static void selectSort1(int[] arr){
         for (int j=arr.length-1;j>0;j--){
             int index=0;
             for (int i=1;i<=j;i++){
@@ -25,6 +25,7 @@ public class SelectSort {
             System.out.println();
         }
     }
+
     static void pList(int[] list){
         for (int i=0;i<list.length;i++){
             System.out.print(list[i]+"_");
