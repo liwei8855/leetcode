@@ -1,5 +1,5 @@
 package com.example.leet_code;
-
+//合并两个有序数组
 public class _88 {
     public static void main(String[] args) {
 //         int nums1[] = {1,2,3,0,0,0};

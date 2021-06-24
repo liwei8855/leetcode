@@ -1,22 +1,22 @@
 package 排序;
 
-
 public class BubbleSort {
 
     public static void main(String[] args) {
 //        int list1[] = {16,25,85,94,14,5,38};
         int list1[] = {16,5,34,66,74,85,94};
+
         bubbleSort(list1);
         for (int i=0;i<list1.length;i++){
             System.out.print(list1[i]+"_");
         }
 
 //        int list2[] = {16,25,85,94,14,5,38};
-        int list2[] = {16,5,34,66,74,85,94};
-        bubbleSort2(list2);
-        for (int i=0;i<list2.length;i++){
-            System.out.print(list2[i]+"_");
-        }
+//        int list2[] = {16,5,34,66,74,85,94};
+//        bubbleSort2(list2);
+//        for (int i=0;i<list2.length;i++){
+//            System.out.print(list2[i]+"_");
+//        }
     }
 
     static void bubbleSort (int[] arr) {
@@ -53,5 +53,4 @@ public class BubbleSort {
         }
         System.out.println("swap:"+swapCount);
     }
-
 }
