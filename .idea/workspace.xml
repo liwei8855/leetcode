@@ -7,9 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f048ea9-e169-4533-a01b-9ae97323bea2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/java_demo/leet_code/src/main/java/com/example/leet_code/_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_demo/leet_code/src/main/java/com/example/leet_code/_02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_leetcode/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_leetcode/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java_leetcode/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_leetcode/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java_leetcode/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_leetcode/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_leetcode/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +32,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="193" />
-    <option name="y" value="222" />
+    <option name="x" value="161" />
+    <option name="y" value="166" />
     <option name="width" value="1086" />
     <option name="height" value="634" />
   </component>
@@ -222,10 +223,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="193" y="222" width="1086" height="634" extended-state="0" />
+    <frame x="161" y="166" width="1086" height="634" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.38122606" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3888889" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />

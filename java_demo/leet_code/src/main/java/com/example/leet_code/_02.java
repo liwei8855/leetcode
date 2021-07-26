@@ -1,5 +1,6 @@
 package com.example.leet_code;
 
+import com.example.leet_code.ListNode;
 
 public class _02 {
 
@@ -19,13 +20,13 @@ public class _02 {
         ListNode n5 = new ListNode(4,null);
         n4.next = n5;
         printList(head2);
-
-        ListNode list = addTwoNumbers(head1,head2);
-        ListNode.printList(list);
+//
+//        ListNode list = addTwoNumbers(head1,head2);
+//        ListNode.printList(list);
     }
 
 
-        static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode newhead = new ListNode(0);
         ListNode current = newhead;
         int p = 0;
@@ -52,9 +53,10 @@ public class _02 {
     }
 
     public static void printList(ListNode head) {
-        if (head==null) return;
-        while (head.next != null){
+        while (head != null){
             System.out.print(head.val+"_");
+            head = head.next;
         }
+        System.out.println("null");
     }
 }
