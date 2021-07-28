@@ -1,8 +1,8 @@
 package com.company.done;
 
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
     ListNode() {
     }
@@ -11,12 +11,12 @@ public class ListNode {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
     }
 
-    static void printList(ListNode head){
+    public static void printList(ListNode head){
         while (head!=null){
             System.out.print(head.val+"_");
             head = head.next;
