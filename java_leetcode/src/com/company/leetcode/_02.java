@@ -22,8 +22,36 @@ public class _02 {
         n11.next = n12;
         ListNode.printList(head2);
 
-        ListNode list = addTwoNumbers1(head1,head2);
+        ListNode list = addTwoNumbers2(head1,head2);
         ListNode.printList(list);
+    }
+
+    static ListNode addTwoNumbers2(ListNode l1, ListNode l2){
+        ListNode newHead = new ListNode();
+        ListNode cur = newHead;
+        int flag = 0;
+        while (l1 != null && l2 != null){
+            int result = l1.val+l2.val+flag;
+            flag = result / 10;
+            int sum = result % 10;
+            cur.next = new ListNode(sum);
+            l1 = l1.next;
+            l2 = l2.next;
+            cur = cur.next;
+        }
+        ListNode restNode = l1==null?l2:l1;
+        while (restNode != null){
+            int result = restNode.val+flag;
+            flag = result / 10;
+            int sum = result % 10;
+            cur.next = new ListNode(sum);
+            restNode = restNode.next;
+            cur = cur.next;
+        }
+        if (flag>0){
+            cur.next = new ListNode(flag);
+        }
+        return newHead.next;
     }
 
     static ListNode addTwoNumbers1(ListNode l1, ListNode l2) {

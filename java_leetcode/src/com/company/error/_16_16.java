@@ -4,9 +4,43 @@ public class _16_16 {
     public static void main(String[] args) {
 //        int[] arr = {1,3,5,7,9};
         int[] arr = {1,2,4,7,10,11,7,12,6,7,16,18,19};
-        int[] result = subSort(arr);
+        int[] result = subSort2(arr);
         System.out.println("["+result[0]+","+result[1]+"]");
     }
+
+    static int[] subSort2(int[] array) {
+        if (array.length<2) return new int[] {-1,-1};
+        int maxIndex=-1;
+        int max = array[0];
+        for (int i=1;i<array.length;i++){
+            if (array[i]>max){
+                max = array[i];
+            } else {
+                maxIndex = i;
+            }
+        }
+
+        if (maxIndex == -1) return new int[] {-1,-1};
+
+        int minIndex = -1;
+        int min = array[array.length-1];
+        for (int i=array.length-1;i>=0;i--){
+            if (array[i]<min){
+                min = array[i];
+            } else {
+                minIndex = i;
+            }
+        }
+        return new int[] {minIndex,maxIndex};
+
+    }
+
+
+
+
+
+
+
 
     static int[] subSort(int[] array) {
 

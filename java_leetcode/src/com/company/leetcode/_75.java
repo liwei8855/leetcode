@@ -2,12 +2,37 @@ package com.company.leetcode;
 
 public class _75 {
     public static void main(String[] args) {
-        int[] nums = {1};
-        sortColors(nums);
+        int[] nums = {2,0,2,1,1,0};// {1};
+        sortColors2(nums);
         for (int i=0;i<nums.length;i++){
             System.out.print(nums[i]+"_");
         }
     }
+
+    static void sortColors2(int[] nums) {
+        if (nums.length<2) return;
+        int i = 0;
+        int j = nums.length-1;
+        int k = i;
+        while (k<=j){
+            if (nums[k] == 0){
+                int tmp = nums[k];
+                nums[k] = nums[i];
+                nums[i] = tmp;
+                k++;i++;
+            } else if(nums[k] == 2){
+                int tmp = nums[k];
+                nums[k] = nums[j];
+                nums[j] = tmp;
+                k++;j--;
+            } else {
+                k++;
+            }
+
+        }
+    }
+
+
     static void sortColors(int[] nums) {
         if (nums.length<2) return;
         int i=0;
