@@ -11,4 +11,14 @@ public class TreeNode {
         this.left = left;
         this.right = right;
     }
+
+    static void forePrint(TreeNode node){
+        if (node==null) {
+            System.out.print("null_");
+            return;
+        }
+        System.out.print(node.val+"_");
+        forePrint(node.left);
+        forePrint(node.right);
+    }
 }
