@@ -1,5 +1,7 @@
 package com.company.leetcode;
 
+import apple.laf.JRSUIUtils;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -13,6 +15,18 @@ public class TreeNode {
         this.val = val;
         this.left = left;
         this.right = right;
+    }
+
+    //后序遍历
+    static String postSerialize(TreeNode node){
+        if (node==null) return "#!";
+        StringBuilder sb = new StringBuilder();
+        String left = postSerialize(node.left);
+        sb.append(left);
+        String right = postSerialize(node.right);
+        sb.append(right);
+        sb.append(Integer.toString(node.val)+'!');
+        return sb.toString();
     }
 
     static void forePrint(TreeNode node){
