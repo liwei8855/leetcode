@@ -1,5 +1,7 @@
 package com.company.leetcode;
 
+//list node
+
 public class ListNode {
     public int val;
     public ListNode next;
