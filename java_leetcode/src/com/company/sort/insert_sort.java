@@ -2,11 +2,17 @@ package com.company.sort;
 
 public class insert_sort {
     public static void main(String[] args) {
-        int list1[] = {16,5,34,74,94,66,85};
-        insertSort(list1);
-        for (int i=0;i<list1.length;i++){
-            System.out.print(list1[i]+"_");
+//        int list1[] = {16,5,34,74,94,66,85};
+//        insertSort(list1);
+//        for (int i=0;i<list1.length;i++){
+//            System.out.print(list1[i]+"_");
+//        }
+        String str = "abc add";
+        String[] strArr = str.split("\\ ");
+        for (int i=0;i<strArr.length;i++){
+            System.out.println(strArr[i]);
         }
+
     }
 
     static void insertSort(int[] array){
