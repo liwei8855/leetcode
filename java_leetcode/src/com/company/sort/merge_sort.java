@@ -4,7 +4,8 @@ import java.lang.reflect.Array;
 
 public class merge_sort {
     public static void main(String[] args) {
-        int list[] = {16,5,34,74,94,66,85};
+//        int list[] = {16,5,34,74,94,74,85};
+        int list[] = new int[]{1,3,4,2,5};
         mergeSort(list,0,list.length-1);
         for (int i=0;i<list.length;i++){
             System.out.print(list[i]+"_");
@@ -24,13 +25,10 @@ public class merge_sort {
         int l = left;
         int r = mid;
         while (l<mid&&r<=right){
-            if (array[l]<array[r]) {
+            if (array[l]<=array[r]) {
                 temp[i++] = array[l++];
             } else if (array[l]>array[r]){
                 temp[i++] = array[r++];
-            } else {
-                temp[i++] = array[l++];
-                r++;
             }
         }
         while (l<mid) {
